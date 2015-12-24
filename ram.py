@@ -17,7 +17,7 @@ load_path = save_dir + save_prefix + str(start_step) + ".ckpt"
 # to enable visualization, set draw to True
 eval_only = False
 animate = True
-draw = False
+draw = True
 
 minRadius = 4 # zooms -> minRadius * 2**<depth_level>
 sensorBandwidth = 8 # fixed resolution of sensor
@@ -248,7 +248,8 @@ with tf.Graph().as_default():
         
         if draw:
             fig = plt.figure()
-            txt = fig.suptitle("-", fontsize=36, fontweight='bold')    
+            txt = fig.suptitle("-", fontsize=36, fontweight='bold') 
+            plt.ion()
             plt.show()   
             plt.subplots_adjust(top=0.7)
         
