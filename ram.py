@@ -245,12 +245,14 @@ with tf.Graph().as_default():
         evaluate()
     else:
         summary_writer = tf.train.SummaryWriter("summary", graph_def=sess.graph_def)
-        fig = plt.figure()
-        txt = fig.suptitle("-", fontsize=36, fontweight='bold')    
-        plt.show()   
-        plt.subplots_adjust(top=0.7)
         
-        plotImgs = []
+        if draw:
+            fig = plt.figure()
+            txt = fig.suptitle("-", fontsize=36, fontweight='bold')    
+            plt.show()   
+            plt.subplots_adjust(top=0.7)
+        
+            plotImgs = []
         
         for step in xrange(start_step + 1, max_iters):
             start_time = time.time()
