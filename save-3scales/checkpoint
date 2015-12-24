@@ -1,0 +1,6 @@
+model_checkpoint_path: "save-3scales/save10000.ckpt"
+all_model_checkpoint_paths: "save-3scales/save6000.ckpt"
+all_model_checkpoint_paths: "save-3scales/save7000.ckpt"
+all_model_checkpoint_paths: "save-3scales/save8000.ckpt"
+all_model_checkpoint_paths: "save-3scales/save9000.ckpt"
+all_model_checkpoint_paths: "save-3scales/save10000.ckpt"
