@@ -9,4 +9,5 @@ A messy attempt (in development) to implement the recurrent attention model (RAM
 `python ram.py`
 
 Initial run may take a minute, since it downloads MNIST
-Shows visualization of glimpses by default
+
+Visualization of glimpses is turned on by default
